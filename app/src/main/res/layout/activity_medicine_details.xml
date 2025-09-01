@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Medicine Image -->
+        <ImageView
+            android:id="@+id/medicineImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_medicine_placeholder" />
+
+        <!-- Medicine Name -->
+        <TextView
+            android:id="@+id/medicineNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Brand -->
+        <TextView
+            android:id="@+id/brandText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Manufacturer -->
+        <TextView
+            android:id="@+id/manufacturerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manufacturer:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Uses -->
+        <TextView
+            android:id="@+id/usesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uses:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ingredients -->
+        <TextView
+            android:id="@+id/ingredientsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Side Effects -->
+        <TextView
+            android:id="@+id/sideEffectsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Side Effects:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

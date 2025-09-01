@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Loading Animation Gif -->
+    <ImageView
+        android:id="@+id/loadingAnimation"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        android:scaleType="fitCenter" />
+
+
+
+    <!-- No Internet Image -->
+    <ImageView
+        android:id="@+id/noInternetImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:src="@drawable/no_internet_connection" />
+
+    <!-- No Data Gif -->
+    <ImageView
+        android:id="@+id/noDataGif"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:scaleType="fitCenter" />
+
+
+    <!-- Retry Button -->
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

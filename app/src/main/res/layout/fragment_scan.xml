@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scanFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Scan Button -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Medicine Barcode"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search scanned medicines..."
+        android:padding="10dp"
+        android:background="@drawable/rounded_border"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawableTint="#126b33"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <!-- RecyclerView for scanned items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scannedRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

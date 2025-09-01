@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Medicine Tracker</string>
+
+    <string-array name="repeat_options">
+        <item>One Time</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+    </string-array>
+
+</resources>
